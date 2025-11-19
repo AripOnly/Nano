@@ -1,0 +1,12 @@
+2025-11-13 19:28:43 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-13 22:37:03 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-13 22:38:37 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-13 22:39:05 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-13 22:41:29 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-13 23:30:39 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-13 23:30:45 | ERROR    | Error panggil gpt-5: Responses.create() got an unexpected keyword argument 'presence_penalty'
+2025-11-13 23:32:37 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-13 23:32:42 | ERROR    | Error panggil gpt-5: Responses.create() got an unexpected keyword argument 'frequency_penalty'
+2025-11-13 23:33:38 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-13 23:33:43 | ERROR    | Error panggil gpt-5: Responses.create() got an unexpected keyword argument 'seed'
+2025-11-13 23:34:36 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5

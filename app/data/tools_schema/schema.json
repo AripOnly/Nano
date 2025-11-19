@@ -1,0 +1,164 @@
+[
+  {
+    "type": "function",
+    "name": "read_file",
+    "description": "Read and return the contents of a file",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filepath": {
+          "type": "string",
+          "description": "The path to the file to read"
+        }
+      },
+      "required": ["filepath"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "write_file",
+    "description": "Write content to a file (overwrites existing content)",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filepath": {
+          "type": "string",
+          "description": "The path to the file to write"
+        },
+        "content": {
+          "type": "string",
+          "description": "The content to write to the file"
+        },
+        "safe_write": {
+          "type": "boolean",
+          "description": "Use atomic write for safety (default: true)",
+          "default": true
+        }
+      },
+      "required": ["filepath", "content"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "create_file",
+    "description": "Create a new file with optional content",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filepath": {
+          "type": "string",
+          "description": "The path to the file to create"
+        },
+        "content": {
+          "type": "string",
+          "description": "The initial content of the file (default: empty)",
+          "default": ""
+        },
+        "overwrite": {
+          "type": "boolean",
+          "description": "Overwrite if file already exists (default: false)",
+          "default": false
+        }
+      },
+      "required": ["filepath"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "delete_file",
+    "description": "Delete a file safely (moves to trash) or permanently",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filepath": {
+          "type": "string",
+          "description": "The path to the file to delete"
+        },
+        "safe_delete": {
+          "type": "boolean",
+          "description": "Move to trash instead of permanent delete (default: true)",
+          "default": true
+        }
+      },
+      "required": ["filepath"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "append_file",
+    "description": "Append content to the end of a file",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "filepath": {
+          "type": "string",
+          "description": "The path to the file to append to"
+        },
+        "content": {
+          "type": "string",
+          "description": "The content to append to the file"
+        }
+      },
+      "required": ["filepath", "content"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "list_directory",
+    "description": "List contents of a directory with optional filters",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "dirpath": {
+          "type": "string",
+          "description": "The path to the directory to list"
+        },
+        "only_files": {
+          "type": "boolean",
+          "description": "Show only files, exclude directories (default: false)",
+          "default": false
+        },
+        "filter_ext": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Filter by file extensions (e.g., ['.py', '.txt'])"
+        },
+        "recursive": {
+          "type": "boolean",
+          "description": "Include subdirectories (default: false)",
+          "default": false
+        }
+      },
+      "required": ["dirpath"]
+    }
+  },
+  {
+    "type": "function",
+    "name": "move_file",
+    "description": "Move or rename a file to a new location",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "type": "string",
+          "description": "The source file path"
+        },
+        "dst": {
+          "type": "string",
+          "description": "The destination file path or directory"
+        },
+        "overwrite": {
+          "type": "boolean",
+          "description": "Overwrite if destination exists (default: false)",
+          "default": false
+        }
+      },
+      "required": ["src", "dst"]
+    }
+  },
+  {
+    "type": "web_search"
+  }
+]

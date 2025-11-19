@@ -1,0 +1,31 @@
+2025-11-14 01:43:06 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 01:45:19 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 01:49:18 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 12:56:49 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:00:21 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:23:08 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:27:58 | ERROR    | Error panggil gpt-5: Request timed out.
+2025-11-14 13:32:10 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:36:22 | ERROR    | Error panggil gpt-5: Request timed out.
+2025-11-14 13:43:49 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:45:29 | ERROR    | Error panggil gpt-5: Request timed out.
+2025-11-14 13:47:07 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:50:33 | ERROR    | Error panggil gpt-5: Request timed out.
+2025-11-14 13:53:24 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5
+2025-11-14 13:59:26 | ERROR    | Error panggil gpt-5: Connection error.
+2025-11-14 19:59:30 | INFO     | APP Start...
+2025-11-14 19:59:34 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-5.1
+2025-11-14 21:02:06 | INFO     | APP Shutdown...
+2025-11-14 21:06:52 | INFO     | APP Start...
+2025-11-14 21:06:54 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-14 23:26:32 | INFO     | APP Shutdown...
+2025-11-14 23:26:51 | INFO     | APP Start...
+2025-11-14 23:26:53 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-14 23:31:36 | INFO     | APP Start...
+2025-11-14 23:31:37 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-14 23:32:39 | INFO     | APP Shutdown...
+2025-11-14 23:37:39 | INFO     | APP Start...
+2025-11-14 23:37:40 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o
+2025-11-14 23:37:47 | ERROR    | Error panggil gpt-4o: Error code: 400 - {'error': {'message': "Invalid type for 'tools': expected an array of tools, but got an object instead.", 'type': 'invalid_request_error', 'param': 'tools', 'code': 'invalid_type'}}
+2025-11-14 23:40:08 | INFO     | APP Start...
+2025-11-14 23:40:09 | INFO     | ModelOpenAI siap digunakan dengan model: gpt-4o

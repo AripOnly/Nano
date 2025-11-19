@@ -1,0 +1,37 @@
+┌──────────────────────────────┐
+│          main.py / CLI       │
+│ (entry point, interaksi user)│
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│          core/               │
+│ agent.py, orchestrator.py,   │
+│ llm.py, personality.py       │
+│ (logika utama AI)            │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│          modules/            │
+│ memory_manager,              │
+│ summary_manager,             │
+│ embedding_manager, dll.      │
+│ (tugas spesifik / service)   │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│          utils/              │
+│ filter_utils, text_utils,    │
+│ files_manager, token_utils   │
+│ (alat bantu netral)          │
+└──────────────────────────────┘
+
+main → core  →  modules  →  services  →  utils
+
+core/        → use modules/ + services/
+core/agents/  → use modules/ + services/ + utils
+modules/     → use utils/ + services/
+services/    → use utils/
+utils/       → berdiri sendiri
