@@ -11,5 +11,12 @@ class RecentMemory(BaseMemory):
 
     def get_recent_memory(self) -> str:
         records = self.load_memory(last_n=self.last_n)
-        records = self.filter_memory(data=records, max_tokens=self.max_tokens)
+
+        # Selalu pertahankan dict terbaru
+        records = self.filter_memory(
+            data=records,
+            max_tokens=self.max_tokens,
+            sort_by_score=False,  # recent tidak pakai score
+        )
+
         return self.format_str(records)

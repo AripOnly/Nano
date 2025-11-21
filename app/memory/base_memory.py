@@ -121,27 +121,24 @@ class BaseMemory:
         return data
 
     def filter_memory(
-        self, data: list[dict], max_tokens: int = 1000, sort_by_score: bool = False
-    ) -> list[dict]:
-        """
-        Trim memory berdasarkan token limit.
-        Jika sort_by_score=True, trim dari score terendah.
-        """
+        self, data: list[dict], max_tokens: int = 1000, sort_by_score=False
+    ):
         if not data:
-            return data
+            return []
 
-        filtered = data.copy()
+        records = data.copy()
 
+        # Urutkan berdasarkan score kalau diminta
         if sort_by_score:
-            filtered.sort(key=lambda x: x.get("score", 0), reverse=True)
+            records.sort(key=lambda x: x.get("score", 0), reverse=True)
 
-        def calc_tokens(recs):
-            return token_count(self.format_str(recs))
+        def total_tokens(items):
+            return token_count(self.format_str(items))
 
-        total = calc_tokens(filtered)
+        # Trim token
+        while total_tokens(records) > max_tokens:
+            if len(records) <= 1:
+                break  # minimal pertahankan 1
+            records.pop(-1)  # buang skor terendah
 
-        while len(filtered) > 1 and total > max_tokens:
-            filtered.pop(-1 if sort_by_score else 0)
-            total = calc_tokens(filtered)
-
-        return filtered
+        return records

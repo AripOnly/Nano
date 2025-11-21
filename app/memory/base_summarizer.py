@@ -17,6 +17,7 @@ class BaseSummarizer:
 
         self.vector = VectorStore()
         self.fm = FileManager()
+        self.model = ModelOpenAI("gpt-4o-mini")
 
     def load_summary(self, last_n: int = None) -> list[dict]:
         if not os.path.exists(self.summary_file):
@@ -40,34 +41,34 @@ class BaseSummarizer:
         else:
             return False
 
-    def summary_str(self, last_n: int = None) -> str:
-        summaries = self.load_summary(last_n)
-        if not summaries:
+    def summary_str(self, data: list[dict]) -> str:
+        if not data:
             return ""
         blocks = []
-        for s in summaries:
+        for s in data:
             blocks.append(f"Date: {s.get('date')}\nSummary: {s.get('summary')}")
         return "\n\n".join(blocks)
 
     def filter_summary(
-        self, data: list[dict], max_tokens: int = 1000, sort_by_score: bool = True
+        self, data: list[dict], max_tokens: int = 1000, sort_by_score=True
     ):
+        if not data:
+            return []
 
-        filtered = data.copy()
+        records = data.copy()
 
         if sort_by_score:
-            filtered.sort(key=lambda x: x.get("score", 0), reverse=True)
+            records.sort(key=lambda x: x.get("score", 0), reverse=True)
 
-        def calc_tokens(recs):
-            return token_count(self.summary_str(recs))
+        def total_tokens(items):
+            return token_count(self.summary_str(items))
 
-        total = calc_tokens(filtered)
+        while total_tokens(records) > max_tokens:
+            if len(records) <= 1:
+                break
+            records.pop(-1)
 
-        while len(filtered) > 1 and total > max_tokens:
-            filtered.pop(-1 if sort_by_score else 0)
-            total = calc_tokens(filtered)
-
-        return filtered
+        return records
 
     def get_counter(self):
         if os.path.exists(self.count_summary_file):
@@ -104,8 +105,8 @@ class BaseSummarizer:
             {"role": "system", "content": prompt_system},
             {"role": "user", "content": text},
         ]
-        llm = ModelOpenAI("gpt-4o-mini")
-        response = llm.call(messages=messages)
+
+        response = self.model.call(messages=messages)
 
         summary_data = {
             "summary_id": generate_id("smr"),

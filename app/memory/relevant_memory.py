@@ -23,12 +23,7 @@ class RelevantMemory(BaseMemory):
 
     def get_relevant_memory(self, prompt) -> str:
         recent = self.load_memory(last_n=self.last_n)
-
-        if not os.path.exists(self.memory_vector_file):
-            log.warning(
-                f"Vector index file '{self.memory_vector_file}' does not exist."
-            )
-            return ""
+        recent_ids = {item["chat_id"] for item in recent}
 
         relevant = self.vm.search(
             prompt,
@@ -37,13 +32,14 @@ class RelevantMemory(BaseMemory):
             min_score=self.min_score,
         )
 
-        # Filter duplikat: hapus yang chat_id sama dengan recent
-        recent_ids = {item["chat_id"] for item in recent}
+        # 1️⃣ Filter duplikat ID
         filtered = [item for item in relevant if item.get("chat_id") not in recent_ids]
 
-        # Trim by token limit (urutkan dari score terendah)
+        # 2️⃣ Token filtering
         filtered = self.filter_memory(
-            data=filtered, max_tokens=self.max_tokens, sort_by_score=True
+            data=filtered,
+            max_tokens=self.max_tokens,
+            sort_by_score=True,
         )
 
         return self.format_str(filtered)

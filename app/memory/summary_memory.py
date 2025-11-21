@@ -1,5 +1,6 @@
 # app/memory/summary_memory.py
 
+from app.utils import log
 from .base_summarizer import BaseSummarizer
 from app.rag.vector_store import VectorStore
 
@@ -18,14 +19,7 @@ class SummaryMemory(BaseSummarizer):
 
         self.vm = VectorStore()
 
-    def get_summary_memory(
-        self,
-        prompt: str,
-    ) -> str:
-        """
-        Cari summary relevan dari vector store berdasar prompt, filter token, kembalikan string.
-        """
-        # Ambil top_k summary dari vector store
+    def get_summary_memory(self, prompt: str) -> str:
         relevant = self.vm.search(
             prompt,
             index_path=self.summary_vector_file,
@@ -33,7 +27,6 @@ class SummaryMemory(BaseSummarizer):
             min_score=self.min_score,
         )
 
-        # Filter summary berdasarkan token
         filtered = self.filter_summary(
             data=relevant,
             max_tokens=self.max_tokens,
