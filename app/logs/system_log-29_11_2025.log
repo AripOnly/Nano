@@ -1,0 +1,48 @@
+2025-11-29 19:57:07 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 19:57:52 | ERROR    | Kesalahan pemrosesan chat: 'Orchestrator' object has no attribute 'process_message'
+2025-11-29 20:07:34 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 20:34:55 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 20:36:14 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 20:36:55 | INFO     | Recent Memory Token Count: 918
+2025-11-29 20:37:31 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-29 20:37:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 20:37:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 20:37:36 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-29 20:37:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-29 20:37:36 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-29 20:37:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-29 20:37:49 | INFO     | Recent Memory Token Count: 973
+2025-11-29 20:38:14 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-29 20:38:14 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 20:38:14 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 20:38:14 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-29 20:53:00 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 20:54:08 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 21:08:18 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 21:09:45 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 21:14:32 | INFO     | Orchestrator AI berhasil diinisialisasi.
+2025-11-29 21:15:52 | INFO     | Recent Memory Token Count: 1144
+2025-11-29 21:16:36 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-29 21:16:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 21:16:36 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 21:16:41 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-29 21:18:00 | INFO     | Recent Memory Token Count: 1218
+2025-11-29 21:18:19 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-29 21:18:19 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 21:18:19 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 21:18:23 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-29 21:18:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-29 21:18:23 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-29 21:18:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-29 21:19:57 | INFO     | Summary Memory Token Count: 70
+2025-11-29 21:41:45 | INFO     | Recent Memory Token Count: 1296
+2025-11-29 21:42:05 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-29 21:42:05 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 21:42:05 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 21:42:05 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-29 21:42:45 | INFO     | Summary Memory Token Count: 70
+2025-11-29 21:42:45 | INFO     | Recent Memory Token Count: 1384
+2025-11-29 21:43:07 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-29 21:43:07 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-29 21:43:07 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-29 21:43:07 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'

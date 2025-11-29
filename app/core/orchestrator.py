@@ -23,7 +23,7 @@ class Orchestrator:
         # Model cukup init sekali
         self.model = ModelOpenAI("gpt-5-mini")
 
-    def process(self, prompt):
+    def process_message(self, prompt, session_id="default"):
         messages = []
 
         personality = "Your name is Nano. You are an advanced AI assistant designed to assist users."

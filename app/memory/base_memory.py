@@ -142,3 +142,17 @@ class BaseMemory:
             records.pop(-1)  # buang skor terendah
 
         return records
+
+    def load_all_memory(self) -> list:
+        """Memuat seluruh riwayat chat yang tersimpan (TANPA filter)"""
+        if not os.path.exists(self.memory_file):
+            log.warning(f"Memory file '{self.memory_file}' does not exist.")
+            return []
+
+        data = self.fm.read_json(self.memory_file)
+
+        if not isinstance(data, list):
+            log.error("Memory file content is invalid (expected list).")
+            return []
+
+        return data

@@ -1,7 +1,13 @@
 |-> app/
+|   |-> ui/
+|   |   |-> templates/
+|   |   |   |-> index.html
+|   |   |-> static/
+|   |   |   |-> style.css
+|   |   |   |-> script.js
 |   |-> core/
 |   |   |-> orchestrator.py
-   |-> agent/
+|   |-> agent/
 |   |   |-> agent.py
 |   |-> services/
 |   |   |-> model_openai.py
@@ -25,9 +31,10 @@
 |   |   |-> init.py
 |   |-> data/
 |   |   |-> memory/
-|   |   |   |-> memory.json
-|   |   |   |-> summary.json
-|   |   |   |-> counter_summary.json
+	|   |   |-> default/
+|   |   |   |   |-> memory.json
+|   |   |   |   |-> summary.json
+|   |   |   |   |-> counter_summary.json
 |   |   |-> vector_store/
 |   |   |   |   |-> memory/
 |   |   |   |   |   |-> default/
@@ -40,5 +47,6 @@
 |   |   |   |-> tools.index
 |   |   |   |-> tools.index.meta.json
 |-> cli.py
+|-> main.py
 |-> requirements.py
 |-> .env

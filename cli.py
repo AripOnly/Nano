@@ -1,6 +1,5 @@
 # cli.py
 
-from app.config import config
 from app.core.orchestrator import Orchestrator
 from app.utils.logger import log
 

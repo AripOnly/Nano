@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Chat Interface - Classic Modern</title>
 
-    <!--
-      FIX: SCRIPT SINKRON UNTUK MENCEGAH FLICKER TEMA GELAP (FOUC)
-      Ini harus dijalankan sebelum konten body dimuat untuk menerapkan class 'dark'
-      secara instan berdasarkan localStorage atau preferensi sistem.
-    -->
     <script>
       const storedTheme = localStorage.getItem("theme");
       const prefersDark = window.matchMedia(
@@ -20,8 +15,9 @@
       if (isDark) {
         document.documentElement.classList.add("dark");
       }
-      // Catatan: Ikon di header (Lucide) akan diatur oleh script modul utama setelah Lucide dimuat.
     </script>
+
+    <link rel="stylesheet" href="/static/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,59 +28,10 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-
-      /* Custom Scrollbar */
-      .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #cbd5e1;
-        border-radius: 3px;
-      }
-      .dark .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #475569;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background-color: transparent;
-      }
-
-      /* Textarea initial height */
-      #chat-input {
-        min-height: 1.25rem;
-        line-height: 1.5;
-      }
-
-      /* Animation for the loading spinner */
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      .animate-spin-slow {
-        animation: spin 3s linear infinite;
-      }
-
-      /* Smooth transitions for all interactive elements */
-      button,
-      a,
-      textarea {
-        transition: all 0.2s ease;
-      }
-    </style>
   </head>
   <body
     class="h-screen overflow-hidden flex bg-[#f7f9fb] dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300"
   >
-    <!-- Sidebar -->
     <aside
       id="sidebar"
       class="fixed inset-y-0 left-0 transform -translate-x-full transition-all duration-300 ease-in-out w-64 bg-white dark:bg-gray-800 flex flex-col z-40 shadow-xl md:shadow-lg"
@@ -108,7 +55,6 @@
             class="p-1 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition flex-shrink-0"
             title="Tutup Sidebar"
           >
-            <!-- Ikon untuk menutup sidebar (<<) -->
             <i
               data-lucide="chevrons-left"
               id="sidebar-toggle-icon"
@@ -167,23 +113,19 @@
       </div>
     </aside>
 
-    <!-- Sidebar Overlay (Mobile Only) -->
     <div
       id="sidebar-overlay"
       class="fixed inset-0 bg-black opacity-0 md:hidden z-30 pointer-events-none transition-opacity duration-300 ease-in-out"
     ></div>
 
-    <!-- Main Content Area -->
     <main
       id="main-content"
       class="flex-1 flex flex-col min-w-0 bg-gray-50 dark:bg-gray-900 transition-all duration-300 ease-in-out"
     >
-      <!-- Header -->
       <header
         class="h-16 flex items-center justify-between p-4 bg-white dark:bg-gray-800 shadow-md transition-colors relative"
       >
         <div class="flex items-center space-x-2 z-10">
-          <!-- App Icon (Hidden when sidebar is open on desktop) -->
           <div
             id="app-icon-header"
             class="items-center space-x-2 whitespace-nowrap overflow-hidden hidden"
@@ -193,7 +135,6 @@
               class="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0"
             ></i>
           </div>
-          <!-- Sidebar Toggle (Open) -->
           <button
             id="open-sidebar-btn"
             class="p-2 text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition"
@@ -201,7 +142,6 @@
           >
             <i data-lucide="chevrons-right" class="w-6 h-6"></i>
           </button>
-          <!-- New Chat Button in Header -->
           <button
             id="new-chat-header-btn"
             class="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition"
@@ -211,7 +151,6 @@
           </button>
         </div>
 
-        <!-- Chat Title -->
         <div
           class="absolute inset-x-0 top-1/2 transform -translate-y-1/2 flex justify-center pointer-events-none z-0"
         >
@@ -223,26 +162,22 @@
           </h1>
         </div>
 
-        <!-- Theme Toggle -->
         <div class="flex items-center z-10">
           <button
             id="theme-toggle-btn"
             class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition focus:outline-none"
             title="Ganti Tema"
           >
-            <!-- Ikon awal adalah "moon", akan diubah oleh JS jika tema gelap aktif -->
             <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
           </button>
         </div>
       </header>
 
-      <!-- Conversation Area -->
       <div
         id="conversation-container"
         class="flex-1 overflow-y-auto p-4 md:p-8 custom-scrollbar bg-gray-50 dark:bg-gray-900 transition-colors"
       >
         <div id="chat-history" class="max-w-3xl mx-auto space-y-8 pb-10">
-          <!-- Welcome Message -->
           <div class="flex justify-center text-center pt-8">
             <div
               class="max-w-lg p-6 rounded-xl bg-white dark:bg-gray-800 shadow-xl border border-gray-100 dark:border-gray-700/50"
@@ -262,7 +197,6 @@
         </div>
       </div>
 
-      <!-- Input Area -->
       <div
         class="px-6 pt-1 pb-3 md:px-6 md:pt-1 md:pb-3 bg-gray-50 dark:bg-gray-900 transition-colors"
       >
@@ -270,7 +204,6 @@
           <div
             class="w-full flex items-end bg-white dark:bg-gray-700 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
           >
-            <!-- Image Input (Placeholder) -->
             <button
               id="image-input-btn"
               class="p-4 text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition"
@@ -279,7 +212,6 @@
               <i data-lucide="image-plus" class="w-6 h-6"></i>
             </button>
 
-            <!-- Textarea -->
             <textarea
               id="chat-input"
               rows="1"
@@ -288,7 +220,6 @@
               style="max-height: 150px; overflow-y: auto"
             ></textarea>
 
-            <!-- Send Button -->
             <button
               id="send-button"
               class="p-3 m-2 rounded-full text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400 transition flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
@@ -299,7 +230,6 @@
             </button>
           </div>
 
-          <!-- Features Indicators (Placeholder) -->
           <div class="mt-3 flex items-center space-x-4 text-sm">
             <div
               class="flex items-center space-x-1.5 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer transition"
@@ -322,508 +252,6 @@
       </div>
     </main>
 
-    <!-- SCRIPT (Menggunakan jQuery untuk DOM Manipulation) -->
-    <script type="module">
-      // Import Firebase modules
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-      import {
-        getAuth,
-        signInAnonymously,
-        signInWithCustomToken,
-        onAuthStateChanged,
-      } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-      import {
-        getFirestore,
-        setDoc,
-        doc,
-      } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
-      // --- Global Firebase and API Setup ---
-      let db, auth;
-      let currentUserId = "anonymous";
-      const chatHistory = [];
-      let isFetching = false;
-
-      // Access environment variables
-      const appId =
-        typeof __app_id !== "undefined" ? __app_id : "default-app-id";
-      const firebaseConfig =
-        typeof __firebase_config !== "undefined"
-          ? JSON.parse(__firebase_config)
-          : null;
-      const initialAuthToken =
-        typeof __initial_auth_token !== "undefined"
-          ? __initial_auth_token
-          : null;
-      const apiKey = "";
-      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
-
-      // --- jQuery Element Selectors ---
-      const $sidebar = $("#sidebar");
-      const $overlay = $("#sidebar-overlay");
-      const $openBtn = $("#open-sidebar-btn");
-      const $toggleBtn = $("#sidebar-toggle-btn");
-      const $toggleIcon = $("#sidebar-toggle-icon");
-      const $chatInput = $("#chat-input");
-      const $mainContent = $("#main-content");
-      const $themeToggleBtn = $("#theme-toggle-btn");
-      const $themeIcon = $("#theme-icon");
-      const $html = $("html");
-      const $chatHistoryContainer = $("#chat-history");
-      const $conversationContainer = $("#conversation-container");
-      const $sendButton = $("#send-button");
-      const $userStatusText = $("#user-status-text");
-      const $chatTitle = $("#chat-title");
-      const $newChatHeaderBtn = $("#new-chat-header-btn");
-      const $newChatSidebarBtn = $("#new-chat-sidebar-btn");
-      const $appIconHeader = $("#app-icon-header"); // Ikon di header
-
-      // --- Firebase Initialization and Authentication ---
-      async function initializeFirebase() {
-        if (!firebaseConfig) {
-          console.error("Firebase configuration is missing.");
-          $userStatusText.text("Mode Demo");
-          return;
-        }
-
-        try {
-          const app = initializeApp(firebaseConfig);
-          db = getFirestore(app);
-          auth = getAuth(app);
-
-          // Listen for auth state changes
-          onAuthStateChanged(auth, async (user) => {
-            if (user) {
-              currentUserId = user.uid;
-              $userStatusText.text(`User ID: ${user.uid.substring(0, 8)}...`);
-              // Set a placeholder user document (MANDATORY for security rules)
-              await setDoc(
-                doc(db, "artifacts", appId, "users", currentUserId),
-                { lastActive: new Date() },
-                { merge: true }
-              ).catch(console.error);
-            } else {
-              $userStatusText.text("Anonim");
-              if (!initialAuthToken) {
-                await signInAnonymously(auth).catch(console.error);
-              }
-            }
-          });
-
-          // Attempt sign-in
-          if (initialAuthToken) {
-            try {
-              await signInWithCustomToken(auth, initialAuthToken);
-            } catch (error) {
-              console.error("Error signing in with custom token:", error);
-              await signInAnonymously(auth).catch(console.error);
-            }
-          } else {
-            await signInAnonymously(auth).catch(console.error);
-          }
-        } catch (error) {
-          console.error("Firebase initialization failed:", error);
-          $userStatusText.text("Mode Demo");
-        }
-      }
-
-      // --- Chat Message Rendering ---
-
-      /**
-       * Creates the HTML structure for a single chat message.
-       * @param {string} role 'user' or 'model'
-       * @param {string} text Message content
-       * @returns {string} HTML string
-       */
-      function createMessageHtml(role, text) {
-        const isUser = role === "user";
-
-        let iconHtml;
-        let bubbleClasses;
-        let alignmentClasses;
-        let name;
-
-        if (isUser) {
-          iconHtml = `<i data-lucide="user" class="w-4 h-4 text-green-600 dark:text-green-400"></i>`;
-          bubbleClasses = "bg-blue-600 dark:bg-blue-700 text-white shadow-lg";
-          alignmentClasses = "justify-end";
-          name = "Anda";
-        } else {
-          iconHtml = `<i data-lucide="sparkles" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i>`;
-          bubbleClasses =
-            "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 shadow-lg border border-gray-100 dark:border-gray-700";
-          alignmentClasses = "justify-start";
-          name = "AI Assistant";
-        }
-
-        const avatarContainerClasses = isUser
-          ? "bg-green-100 dark:bg-green-900/30"
-          : "bg-blue-100 dark:bg-blue-900/30";
-
-        const contentDirectionClasses = isUser
-          ? "flex-row-reverse space-x-3 space-x-reverse"
-          : "space-x-3";
-
-        // Basic Markdown to HTML conversion
-        const formattedText = text
-          .trim()
-          .replace(/\n\s*\n/g, '</p><p class="leading-relaxed">')
-          .replace(/\n/g, "<br>")
-          .replace(/```(.*?)\n([\s\S]*?)```/g, (match, p1, p2) => {
-            const language = p1.trim() || "text";
-            return `<pre class="bg-gray-100 dark:bg-gray-700/50 p-3 rounded-md overflow-x-auto my-2 text-sm"><code class="language-${language}">${p2.trim()}</code></pre>`;
-          })
-          .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-          .replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-        return `
-      <div class="flex ${alignmentClasses}">
-        <div class="flex items-start ${contentDirectionClasses} max-w-full">
-          <div class="w-8 h-8 flex-shrink-0 ${avatarContainerClasses} rounded-full flex items-center justify-center">
-            ${iconHtml}
-          </div>
-          <div class="p-4 rounded-xl transition-colors ${bubbleClasses} message-bubble max-w-3xl overflow-hidden break-words">
-            <p class="font-medium ${
-              isUser ? "mb-1" : "text-gray-800 dark:text-white mb-1"
-            }">${name}</p>
-            <div class="text-sm leading-relaxed">${formattedText}</div>
-          </div>
-        </div>
-      </div>
-    `;
-      }
-
-      /**
-       * Appends a new message to the chat history and scrolls to the bottom.
-       * @param {string} role 'user' or 'model'
-       * @param {string} text Message content
-       * @param {string} [id] ID for the message div (useful for loading state)
-       */
-      function appendMessage(role, text, id = null) {
-        const htmlString = createMessageHtml(role, text);
-        const $messageElement = $(htmlString);
-
-        if (id) {
-          $messageElement.attr("id", id);
-        }
-
-        $chatHistoryContainer.append($messageElement);
-        lucide.createIcons();
-
-        // Scroll to the bottom
-        $conversationContainer.scrollTop(
-          $conversationContainer[0].scrollHeight
-        );
-
-        return $messageElement;
-      }
-
-      /**
-       * Updates an existing AI message, typically used to replace the loading indicator.
-       * @param {string} id The ID of the message element to update
-       * @param {string} text The new message content
-       */
-      function updateMessage(id, text) {
-        const $oldElement = $(`#${id}`);
-        if ($oldElement.length) {
-          const newHtml = createMessageHtml("model", text);
-          $oldElement.replaceWith(newHtml);
-          lucide.createIcons();
-          $conversationContainer.scrollTop(
-            $conversationContainer[0].scrollHeight
-          );
-        }
-      }
-
-      // --- Gemini API Logic (Unchanged) ---
-
-      /**
-       * Sends the chat history to the Gemini API and handles retries.
-       * @param {number} retryCount Current retry attempt
-       */
-      async function makeApiCall(retryCount = 0) {
-        const maxRetries = 5;
-        const systemPrompt =
-          "Anda adalah AI Assistant yang canggih. Jawab pertanyaan pengguna dengan gaya yang membantu dan profesional. Jika diminta membuat kode atau dokumen, sediakan dalam format Markdown di dalam file block.";
-
-        const payload = {
-          contents: chatHistory,
-          tools: [{ google_search: {} }], // Enable search grounding
-          systemInstruction: { parts: [{ text: systemPrompt }] },
-        };
-
-        try {
-          const response = await fetch(apiUrl, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
-
-          if (!response.ok) {
-            if (response.status === 429 || response.status >= 500) {
-              throw new Error(`Temporary API error (${response.status})`);
-            }
-            const errorData = await response.json();
-            throw new Error(
-              `API Error: ${errorData.error.message || response.statusText}`
-            );
-          }
-
-          const result = await response.json();
-          const candidate = result.candidates?.[0];
-
-          if (candidate && candidate.content?.parts?.[0]?.text) {
-            const text = candidate.content.parts[0].text;
-            chatHistory.push({ role: "model", parts: [{ text: text }] });
-            return text;
-          } else {
-            throw new Error("Invalid response format from API.");
-          }
-        } catch (error) {
-          if (retryCount < maxRetries) {
-            const delay = Math.pow(2, retryCount) * 1000 + Math.random() * 1000;
-            await new Promise((resolve) => setTimeout(resolve, delay));
-            return makeApiCall(retryCount + 1);
-          } else {
-            console.error("API call failed after maximum retries:", error);
-            return `Maaf, terjadi kesalahan saat menghubungi layanan AI: ${error.message}`;
-          }
-        }
-      }
-
-      /**
-       * Handles the full sending process: UI update, API call, and result display.
-       */
-      async function sendMessage() {
-        if (isFetching || $chatInput.val().trim() === "") return;
-
-        const userText = $chatInput.val().trim();
-        const tempAiId = "ai-loading-" + Date.now();
-
-        // 1. Reset UI and set fetching state
-        $chatInput.val("");
-        adjustTextareaHeight();
-        isFetching = true;
-        $sendButton.prop("disabled", true);
-
-        // 2. Append User Message and Add to History
-        appendMessage("user", userText);
-        chatHistory.push({ role: "user", parts: [{ text: userText }] });
-
-        // 3. Update chat title with first message
-        if (chatHistory.length === 1) {
-          const shortText =
-            userText.length > 30 ? userText.substring(0, 30) + "..." : userText;
-          $chatTitle.text(shortText);
-        }
-
-        // 4. Append Loading Message
-        const loadingMessage = `
-          <div class="flex items-center space-x-2">
-              <i data-lucide="loader-circle" class="w-4 h-4 animate-spin-slow text-blue-500"></i>
-              <span class="text-sm text-gray-500 dark:text-gray-400">AI sedang mengetik...</span>
-          </div>
-      `;
-        appendMessage("model", loadingMessage, tempAiId);
-
-        // 5. Call API
-        try {
-          const aiResponseText = await makeApiCall();
-          updateMessage(tempAiId, aiResponseText);
-        } catch (error) {
-          console.error("Fatal error during chat process:", error);
-          updateMessage(
-            tempAiId,
-            `❌ **Kesalahan Fatal:** Tidak dapat memproses permintaan. Silakan coba lagi.`
-          );
-        } finally {
-          // 6. Reset fetching state
-          isFetching = false;
-          // Re-enable send button if input is not empty
-          if ($chatInput.val().trim() !== "") {
-            $sendButton.prop("disabled", false);
-          }
-        }
-      }
-
-      // --- New Chat Functionality ---
-      function startNewChat() {
-        chatHistory.length = 0;
-        $chatHistoryContainer.empty();
-
-        $chatTitle.text("Obrolan AI Baru");
-
-        // Add welcome message back
-        const welcomeMessage = `
-      <div class="flex justify-center text-center pt-8">
-        <div class="max-w-lg p-6 rounded-xl bg-white dark:bg-gray-800 shadow-xl border border-gray-100 dark:border-gray-700/50">
-          <i data-lucide="sparkles" class="w-8 h-8 mx-auto mb-3 text-blue-600 dark:text-blue-400"></i>
-          <h2 class="text-xl font-bold mb-2">Halo! Saya Nano.</h2>
-          <p class="text-gray-600 dark:text-gray-300">
-            Tanyakan apapun yang Anda butuhkan: ide coding, analisis,
-            penulisan esai, atau buatkan aplikasi web di editor di sebelah
-            kanan.
-          </p>
-        </div>
-      </div>
-    `;
-        $chatHistoryContainer.html(welcomeMessage);
-        lucide.createIcons();
-
-        $chatInput.val("");
-        adjustTextareaHeight();
-        $sendButton.prop("disabled", true);
-
-        // Close sidebar on mobile after starting new chat
-        if (window.innerWidth < 768) {
-          toggleSidebar(false, true);
-        }
-      }
-
-      // --- UI Interaction Handlers ---
-
-      // Toggle Sidebar
-      function toggleSidebar(forceOpen = false, forceClose = false) {
-        const isHidden = $sidebar.hasClass("-translate-x-full");
-        const isDesktop = window.innerWidth >= 768;
-
-        let shouldOpen = forceOpen || (isHidden && !forceClose);
-        let shouldClose = forceClose || (!isHidden && !forceOpen);
-
-        if (shouldClose) {
-          $sidebar.addClass("-translate-x-full");
-          if (!isDesktop) {
-            $overlay.addClass("opacity-0 pointer-events-none");
-            $overlay.removeClass("opacity-50");
-          }
-          // Tampilkan tombol buka sidebar dan obrolan baru
-          $openBtn.show();
-          $newChatHeaderBtn.show();
-          if (isDesktop) {
-            $mainContent.removeClass("md:ml-64");
-            // Tampilkan ikon header dengan menambahkan md:flex kembali
-            $appIconHeader.addClass("md:flex");
-          }
-        } else if (shouldOpen) {
-          $sidebar.removeClass("-translate-x-full");
-          if (!isDesktop) {
-            $overlay.removeClass("opacity-0 pointer-events-none");
-            $overlay.addClass("opacity-50");
-          }
-          // Sembunyikan tombol buka sidebar dan obrolan baru karena sudah ada di sidebar
-          $openBtn.hide();
-          $newChatHeaderBtn.hide();
-          $toggleIcon.attr("data-lucide", "chevrons-left"); // DIKEMBALIKAN ke 'chevrons-left'
-          if (isDesktop) {
-            $mainContent.addClass("md:ml-64");
-            // Sembunyikan ikon header dengan menghapus md:flex
-            $appIconHeader.removeClass("md:flex");
-          }
-        }
-        lucide.createIcons();
-      }
-
-      // Inisialisasi Ikon Tema (Tema gelap sudah diset di <head>)
-      function initializeThemeIcon() {
-        // Hapus SVG lama yang mungkin dibuat oleh pemanggilan otomatis Lucide
-        $themeIcon.find("svg").remove();
-
-        const isDark = $html.hasClass("dark");
-        $themeIcon.attr("data-lucide", isDark ? "sun" : "moon");
-        lucide.createIcons();
-      }
-
-      // Textarea Auto-Resize
-      function adjustTextareaHeight() {
-        const chatInputDom = $chatInput[0];
-        chatInputDom.style.height = "auto";
-        const newHeight = Math.min(chatInputDom.scrollHeight, 150);
-        chatInputDom.style.height = newHeight + "px";
-      }
-
-      // Set Initial Sidebar State
-      function setInitialSidebarState() {
-        const isDesktop = window.innerWidth >= 768;
-        if (isDesktop) {
-          // Default: Sidebar DITUTUP (Closed)
-          $sidebar.addClass("-translate-x-full"); // Pastikan sidebar tersembunyi
-          $openBtn.show(); // Tampilkan tombol buka sidebar
-          $newChatHeaderBtn.show(); // Tampilkan tombol obrolan baru
-          $mainContent.removeClass("md:ml-64"); // Hapus margin pada konten utama
-          // Tampilkan ikon aplikasi di header saat sidebar tertutup (desktop)
-          $appIconHeader.addClass("md:flex");
-        } else {
-          // Mobile: Sidebar DITUTUP (Closed)
-          $sidebar.addClass("-translate-x-full");
-          $openBtn.show();
-          $newChatHeaderBtn.show();
-          $mainContent.removeClass("md:ml-64");
-        }
-        // Ikon tutup dipertahankan sebagai 'chevrons-left' dari HTML
-        // Ikon buka tetap 'chevrons-right' (di header)
-        lucide.createIcons();
-      }
-
-      // --- Document Ready / Initialization ---
-      $(document).ready(function () {
-        // Event Listeners
-        $toggleBtn.on("click", () => toggleSidebar(false, true));
-        $openBtn.on("click", () => toggleSidebar(true, false));
-        $overlay.on("click", () => toggleSidebar(false, true));
-
-        $newChatSidebarBtn.on("click", (e) => {
-          e.preventDefault();
-          startNewChat();
-        });
-
-        $newChatHeaderBtn.on("click", (e) => {
-          e.preventDefault();
-          startNewChat();
-        });
-
-        $themeToggleBtn.on("click", () => {
-          $html.toggleClass("dark");
-          const isDark = $html.hasClass("dark");
-          localStorage.setItem("theme", isDark ? "dark" : "light");
-
-          // Hapus SVG lama sebelum mengganti atribut ikon
-          $themeIcon.find("svg").remove();
-
-          $themeIcon.attr("data-lucide", isDark ? "sun" : "moon");
-          lucide.createIcons(); // Render ulang ikon baru
-        });
-
-        $chatInput.on("input", () => {
-          adjustTextareaHeight();
-          $sendButton.prop(
-            "disabled",
-            isFetching || $chatInput.val().trim() === ""
-          );
-        });
-
-        $sendButton.on("click", sendMessage);
-
-        $chatInput.on("keydown", (event) => {
-          if (event.key === "Enter" && !event.shiftKey) {
-            event.preventDefault();
-            sendMessage();
-          }
-        });
-
-        // Initial setup calls
-        initializeFirebase();
-        initializeThemeIcon();
-        setInitialSidebarState();
-        adjustTextareaHeight();
-
-        // Ensure sidebar state is handled on resize
-        $(window).on("resize", setInitialSidebarState);
-
-        // Focus input after a slight delay
-        setTimeout(() => {
-          $chatInput.focus();
-        }, 500);
-      });
-    </script>
+    <script type="module" src="/static/script.js"></script>
   </body>
 </html>
