@@ -1,0 +1,188 @@
+2025-11-21 00:10:32 | INFO     | APP Start...
+2025-11-21 00:19:07 | INFO     | Found 0 summary memory items from vector store.
+2025-11-21 00:19:07 | INFO     | Found 0 relevant memory items from vector store.
+2025-11-21 00:19:08 | INFO     | Recent Memory Token Count: 750
+2025-11-21 00:19:35 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-21 00:19:42 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 00:19:42 | DEBUG    | Detected encoding for 'app\memory\recent_memory.py': ascii
+2025-11-21 00:19:42 | DEBUG    | Detected encoding for 'app\memory\relevant_memory.py': utf-8
+2025-11-21 00:19:42 | DEBUG    | Detected encoding for 'app\memory\summary_memory.py': ascii
+2025-11-21 00:19:49 | INFO     | model: gpt-5-mini, length messages: 11, tools: 8
+2025-11-21 00:19:50 | DEBUG    | Detected encoding for 'app\memory\base_memory.py': ascii
+2025-11-21 00:19:59 | INFO     | model: gpt-5-mini, length messages: 13, tools: 8
+2025-11-21 00:19:59 | DEBUG    | Detected encoding for 'app\rag\vector_store.py': ascii
+2025-11-21 00:20:20 | INFO     | model: gpt-5-mini, length messages: 15, tools: 8
+2025-11-21 00:20:20 | DEBUG    | Detected encoding for 'app\memory\base_summarizer.py': Windows-1252
+2025-11-21 00:21:22 | INFO     | model: gpt-5-mini, length messages: 17, tools: 8
+2025-11-21 00:21:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 00:21:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 00:21:36 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-21 00:21:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-21 00:21:36 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-21 00:21:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 00:29:28 | INFO     | Found 0 summary memory items from vector store.
+2025-11-21 00:29:28 | INFO     | Found 0 relevant memory items from vector store.
+2025-11-21 00:29:28 | INFO     | Recent Memory Token Count: 534
+2025-11-21 00:29:45 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-21 00:29:45 | DEBUG    | Detected encoding for 'app\core\orchestrator.py': ascii
+2025-11-21 00:29:54 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 00:29:54 | DEBUG    | Detected encoding for 'app\rag\vector_store.py': ascii
+2025-11-21 00:30:07 | INFO     | model: gpt-5-mini, length messages: 7, tools: 8
+2025-11-21 00:30:12 | INFO     | model: gpt-5-mini, length messages: 9, tools: 8
+2025-11-21 00:30:21 | INFO     | model: gpt-5-mini, length messages: 11, tools: 8
+2025-11-21 00:30:21 | DEBUG    | Detected encoding for 'app\utils\__init__.py': ascii
+2025-11-21 00:30:39 | INFO     | model: gpt-5-mini, length messages: 13, tools: 8
+2025-11-21 00:30:39 | DEBUG    | Detected encoding for 'app\agent\agent.py': utf-8
+2025-11-21 00:30:45 | INFO     | model: gpt-5-mini, length messages: 15, tools: 8
+2025-11-21 00:30:45 | DEBUG    | Detected encoding for 'app\memory\summary_memory.py': ascii
+2025-11-21 00:30:50 | INFO     | model: gpt-5-mini, length messages: 17, tools: 8
+2025-11-21 00:30:50 | DEBUG    | Detected encoding for 'app\memory\relevant_memory.py': utf-8
+2025-11-21 00:30:58 | INFO     | model: gpt-5-mini, length messages: 19, tools: 8
+2025-11-21 00:30:58 | DEBUG    | Detected encoding for 'app\tools\tools_calling.py': ascii
+2025-11-21 00:31:07 | INFO     | model: gpt-5-mini, length messages: 21, tools: 8
+2025-11-21 00:31:07 | DEBUG    | Detected encoding for 'app\utils\files_manager\file_json_manager.py': ascii
+2025-11-21 00:31:24 | INFO     | model: gpt-5-mini, length messages: 23, tools: 8
+2025-11-21 00:31:24 | DEBUG    | Detected encoding for 'app\rag\embedder.py': ascii
+2025-11-21 00:31:43 | INFO     | model: gpt-5-mini, length messages: 25, tools: 8
+2025-11-21 00:31:43 | DEBUG    | Detected encoding for 'app\utils\files_manager\files_manager.py': ascii
+2025-11-21 00:32:06 | INFO     | model: gpt-5-mini, length messages: 27, tools: 8
+2025-11-21 00:32:19 | INFO     | model: gpt-5-mini, length messages: 29, tools: 8
+2025-11-21 00:32:19 | DEBUG    | Detected encoding for 'app\services\model_openai.py': utf-8
+2025-11-21 00:32:42 | INFO     | model: gpt-5-mini, length messages: 31, tools: 8
+2025-11-21 00:32:42 | DEBUG    | Detected encoding for 'app\memory\base_summarizer.py': Windows-1252
+2025-11-21 00:34:09 | INFO     | model: gpt-5-mini, length messages: 33, tools: 8
+2025-11-21 00:34:09 | DEBUG    | Atomic write successful for 'app\rag\vector_store.py'
+2025-11-21 00:34:41 | INFO     | model: gpt-5-mini, length messages: 35, tools: 8
+2025-11-21 00:34:41 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 00:34:41 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 00:34:41 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 00:43:59 | INFO     | APP Shutdown...
+2025-11-21 01:06:35 | INFO     | APP Start...
+2025-11-21 01:08:30 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:08:32 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:08:33 | INFO     | Recent Memory Token Count: 914
+2025-11-21 01:09:02 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-21 01:09:20 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 01:09:20 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:09:20 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:09:20 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:14:34 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:14:34 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:14:34 | INFO     | Relevant Memory Token Count: 560
+2025-11-21 01:14:34 | INFO     | Recent Memory Token Count: 1006
+2025-11-21 01:14:56 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 01:14:56 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:14:57 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:15:02 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-21 01:15:02 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-21 01:15:02 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-21 01:15:02 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:24:55 | INFO     | APP Shutdown...
+2025-11-21 01:30:04 | INFO     | APP Start...
+2025-11-21 01:35:32 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:35:35 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:35:36 | INFO     | Relevant Memory Token Count: 765
+2025-11-21 01:35:36 | INFO     | Recent Memory Token Count: 755
+2025-11-21 01:36:31 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 01:36:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:36:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:36:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:38:04 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:38:05 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:38:05 | INFO     | Relevant Memory Token Count: 271
+2025-11-21 01:38:05 | INFO     | Recent Memory Token Count: 950
+2025-11-21 01:38:35 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 01:38:35 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:38:35 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:38:35 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:45:29 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:45:32 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:45:32 | INFO     | Relevant Memory Token Count: 764
+2025-11-21 01:45:32 | INFO     | Recent Memory Token Count: 979
+2025-11-21 01:46:28 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 01:46:28 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:46:29 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:46:35 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-21 01:46:35 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-21 01:46:36 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-21 01:46:36 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:47:56 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 01:47:56 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 01:47:56 | INFO     | Relevant Memory Token Count: 398
+2025-11-21 01:47:56 | INFO     | Recent Memory Token Count: 934
+2025-11-21 01:48:23 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 01:48:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 01:48:23 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 01:48:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 01:49:13 | INFO     | APP Shutdown...
+2025-11-21 01:59:01 | INFO     | APP Start...
+2025-11-21 02:21:44 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 02:21:45 | INFO     | Filtered summary memory to fit 1024 tokens.
+2025-11-21 02:21:45 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 02:21:46 | INFO     | Relevant Memory Token Count: 776
+2025-11-21 02:21:46 | INFO     | Recent Memory Token Count: 463
+2025-11-21 02:23:10 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 02:23:10 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 02:23:10 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 02:23:10 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 02:26:34 | INFO     | APP Shutdown...
+2025-11-21 02:28:02 | INFO     | APP Start...
+2025-11-21 02:29:15 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 02:29:15 | INFO     | len filtered summary: 3
+2025-11-21 02:29:15 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 02:29:16 | INFO     | Relevant Memory Token Count: 764
+2025-11-21 02:29:16 | INFO     | Recent Memory Token Count: 252
+2025-11-21 02:30:04 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-21 02:30:04 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 02:30:04 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 02:30:09 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-21 02:30:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-21 02:30:09 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-21 02:30:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 02:37:34 | INFO     | APP Start...
+2025-11-21 02:52:25 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 02:52:26 | INFO     | len filtered summary: 3
+2025-11-21 02:52:26 | INFO     | Summary Memory Token Count: 390
+2025-11-21 02:52:27 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 02:52:27 | INFO     | Relevant Memory Token Count: 240
+2025-11-21 02:52:27 | INFO     | Recent Memory Token Count: 5757
+2025-11-21 02:52:55 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 02:52:55 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 02:52:55 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 02:52:55 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 02:54:19 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 02:54:19 | INFO     | len filtered summary: 3
+2025-11-21 02:54:19 | INFO     | Summary Memory Token Count: 375
+2025-11-21 02:54:19 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 02:54:19 | INFO     | Relevant Memory Token Count: 528
+2025-11-21 02:54:19 | INFO     | Recent Memory Token Count: 11069
+2025-11-21 02:55:51 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 02:55:51 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 02:55:51 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 02:55:51 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 03:00:09 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 03:00:09 | INFO     | len filtered summary: 3
+2025-11-21 03:00:09 | INFO     | Summary Memory Token Count: 400
+2025-11-21 03:00:09 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 03:00:09 | INFO     | Relevant Memory Token Count: 352
+2025-11-21 03:00:09 | INFO     | Recent Memory Token Count: 1656
+2025-11-21 03:00:52 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 03:00:52 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 03:00:53 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 03:00:57 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-21 03:00:57 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-21 03:00:57 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-21 03:00:57 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 03:04:49 | INFO     | Found 3 summary memory items from vector store.
+2025-11-21 03:04:49 | INFO     | len filtered summary: 3
+2025-11-21 03:04:49 | INFO     | Summary Memory Token Count: 409
+2025-11-21 03:04:49 | INFO     | Found 5 relevant memory items from vector store.
+2025-11-21 03:04:49 | INFO     | Relevant Memory Token Count: 344
+2025-11-21 03:04:49 | INFO     | Recent Memory Token Count: 1692
+2025-11-21 03:05:54 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-21 03:05:54 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-21 03:05:54 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-21 03:05:54 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-21 03:09:05 | INFO     | APP Shutdown...
+2025-11-21 11:27:14 | INFO     | APP Start...
+2025-11-21 11:27:24 | ERROR    | OPENAI_API_KEY tidak ditemukan di environment variables.

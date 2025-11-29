@@ -1,0 +1,19 @@
+2025-11-27 19:30:57 | INFO     | APP Start...
+2025-11-27 20:15:48 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-27 20:15:48 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-27 20:15:48 | INFO     | Recent Memory Token Count: 0
+2025-11-27 20:16:22 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-27 20:16:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-27 20:16:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-27 20:16:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-27 20:16:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-27 20:16:25 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-27 20:16:25 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-27 20:20:42 | INFO     | Recent Memory Token Count: 40
+2025-11-27 20:21:02 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-27 20:21:02 | DEBUG    | Detected encoding for 'test.py': ascii
+2025-11-27 20:21:23 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-27 20:21:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-27 20:21:23 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-27 20:21:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-27 20:24:21 | INFO     | APP Shutdown...

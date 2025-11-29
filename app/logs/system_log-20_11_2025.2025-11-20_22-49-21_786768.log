@@ -1,0 +1,92 @@
+2025-11-20 22:52:44 | INFO     | APP Start...
+2025-11-20 22:54:03 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 22:54:03 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 22:54:06 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 22:54:06 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 22:55:42 | INFO     | APP Shutdown...
+2025-11-20 23:00:15 | INFO     | APP Start...
+2025-11-20 23:08:24 | INFO     | Recent Memory Token Count: 266
+2025-11-20 23:08:48 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:08:48 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:08:52 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:08:53 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:10:21 | INFO     | Recent Memory Token Count: 393
+2025-11-20 23:10:51 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:10:51 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:10:51 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:10:57 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-20 23:10:57 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-20 23:10:57 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-20 23:10:57 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:21:59 | INFO     | Recent Memory Token Count: 881
+2025-11-20 23:22:32 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:22:32 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:22:32 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:22:32 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:24:18 | INFO     | APP Shutdown...
+2025-11-20 23:34:17 | INFO     | APP Start...
+2025-11-20 23:37:58 | INFO     | Recent Memory Token Count: 988
+2025-11-20 23:38:22 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:38:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:38:25 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:38:25 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:45:42 | INFO     | Recent Memory Token Count: 988
+2025-11-20 23:46:03 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:46:03 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:46:04 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:46:08 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-20 23:46:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-20 23:46:08 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-20 23:46:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:47:13 | INFO     | Recent Memory Token Count: 988
+2025-11-20 23:47:43 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:47:43 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:47:43 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:47:43 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:48:51 | INFO     | Recent Memory Token Count: 988
+2025-11-20 23:49:25 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:49:25 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:49:26 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:49:26 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:50:31 | INFO     | Recent Memory Token Count: 948
+2025-11-20 23:50:50 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:51:00 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-20 23:51:00 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:51:01 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:51:08 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-20 23:51:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-20 23:51:08 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-20 23:51:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:52:05 | INFO     | Recent Memory Token Count: 893
+2025-11-20 23:52:26 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:52:26 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:52:26 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:52:26 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:53:34 | INFO     | Recent Memory Token Count: 1011
+2025-11-20 23:53:51 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:53:54 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-20 23:54:06 | INFO     | model: gpt-5-mini, length messages: 7, tools: 8
+2025-11-20 23:54:06 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:54:07 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:54:07 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:55:49 | INFO     | Recent Memory Token Count: 938
+2025-11-20 23:56:11 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:56:23 | INFO     | model: gpt-5-mini, length messages: 7, tools: 8
+2025-11-20 23:56:23 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:56:24 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:56:28 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-20 23:56:28 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-20 23:56:29 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-20 23:56:29 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:57:02 | INFO     | Recent Memory Token Count: 978
+2025-11-20 23:57:22 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:57:35 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-20 23:57:35 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:57:35 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:57:35 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-20 23:58:27 | INFO     | Recent Memory Token Count: 857
+2025-11-20 23:58:46 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-20 23:58:58 | INFO     | model: gpt-5-mini, length messages: 5, tools: 8
+2025-11-20 23:58:58 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-20 23:58:58 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-20 23:58:58 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'

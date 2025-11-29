@@ -1,0 +1,167 @@
+2025-11-19 05:21:57 | INFO     | APP Start...
+2025-11-19 05:22:26 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:22:26 | WARNING  | Vector index file 'app/data/vector_store/memory/default/memory.index' does not exist.
+2025-11-19 05:22:26 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:22:48 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 05:22:48 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:22:48 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 05:22:48 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 05:22:49 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:22:51 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 05:34:28 | INFO     | APP Start...
+2025-11-19 05:34:52 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:34:52 | WARNING  | Vector index file 'app/data/vector_store/memory/default/memory.index' does not exist.
+2025-11-19 05:34:52 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:35:18 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 05:35:18 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:35:18 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 05:35:18 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 05:35:18 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:35:18 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 05:38:21 | INFO     | APP Start...
+2025-11-19 05:38:49 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:38:49 | WARNING  | Vector index file 'app/data/vector_store/memory/default/memory.index' does not exist.
+2025-11-19 05:38:49 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 05:39:09 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 05:39:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\counter.json'
+2025-11-19 05:41:31 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 05:41:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:41:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 05:41:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\counter.json'
+2025-11-19 05:44:31 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 05:44:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:44:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 05:44:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\counter.json'
+2025-11-19 05:48:08 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 05:48:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 05:48:08 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 06:29:33 | INFO     | APP Start...
+2025-11-19 06:32:04 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 06:32:04 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 06:32:04 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 06:32:09 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 06:38:32 | INFO     | APP Start...
+2025-11-19 06:52:14 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 06:52:14 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 06:52:14 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 06:52:18 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 06:53:35 | INFO     | APP Start...
+2025-11-19 06:55:18 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 06:55:18 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 06:55:18 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 06:55:22 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 06:55:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 06:57:32 | INFO     | APP Start...
+2025-11-19 06:59:48 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 06:59:48 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 07:00:09 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-19 07:00:09 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 07:00:09 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 07:00:14 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 07:00:14 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 07:00:14 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\default\summary.index.meta.json'
+2025-11-19 07:08:07 | INFO     | APP Start...
+2025-11-19 07:08:50 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 07:08:50 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 07:08:50 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 07:08:55 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 07:08:55 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 07:08:56 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\default\summary.index.meta.json'
+2025-11-19 07:08:56 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 07:20:18 | INFO     | APP Shutdown...
+2025-11-19 07:22:33 | INFO     | APP Start...
+2025-11-19 07:24:03 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 07:24:03 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 07:24:21 | INFO     | model: gpt-5-mini, length messages: 4, tools: 8
+2025-11-19 07:24:21 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 07:24:22 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 07:24:22 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 08:11:38 | INFO     | APP Shutdown...
+2025-11-19 08:34:45 | INFO     | APP Start...
+2025-11-19 08:35:54 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 08:35:54 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 08:36:04 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 08:36:04 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 08:36:08 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 08:36:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 18:35:46 | INFO     | APP Shutdown...
+2025-11-19 18:37:49 | INFO     | APP Start...
+2025-11-19 18:38:50 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 18:38:50 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 18:39:01 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 18:39:01 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 18:39:02 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 18:39:06 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 18:39:06 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 18:39:07 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\default\summary.index.meta.json'
+2025-11-19 18:39:07 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 18:47:58 | INFO     | APP Shutdown...
+2025-11-19 18:49:01 | INFO     | APP Start...
+2025-11-19 18:52:44 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 18:52:44 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 18:52:57 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 18:52:57 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 18:53:04 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 18:53:04 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 18:59:06 | INFO     | APP Shutdown...
+2025-11-19 19:00:32 | INFO     | APP Start...
+2025-11-19 19:02:30 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 19:02:30 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 19:02:42 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 19:02:42 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 19:02:52 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 19:02:53 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 19:05:40 | INFO     | APP Shutdown...
+2025-11-19 19:09:10 | INFO     | APP Start...
+2025-11-19 19:10:35 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 19:10:35 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 19:10:35 | ERROR    | Error panggil gpt-5-mini: Error code: 400 - {'error': {'message': "Invalid type for 'input[2].output': expected one of a string or array of objects, but got an object instead.", 'type': 'invalid_request_error', 'param': 'input[2].output', 'code': 'invalid_type'}}
+2025-11-19 20:34:26 | INFO     | APP Start...
+2025-11-19 20:35:26 | INFO     | model: gpt-5-mini, length messages: 1, tools: 8
+2025-11-19 20:35:26 | DEBUG    | Detected encoding for 'catatan.txt': utf-8
+2025-11-19 20:35:26 | ERROR    | Error panggil gpt-5-mini: Error code: 400 - {'error': {'message': "Invalid type for 'input[2].output': expected one of a string or array of objects, but got an object instead.", 'type': 'invalid_request_error', 'param': 'input[2].output', 'code': 'invalid_type'}}
+2025-11-19 21:15:49 | INFO     | APP Start...
+2025-11-19 23:14:37 | INFO     | APP Start...
+2025-11-19 23:20:41 | INFO     | APP Start...
+2025-11-19 23:42:41 | INFO     | APP Start...
+2025-11-19 23:42:59 | ERROR    | Summary file 'app/data/memory/default/summary.json' does not exist.
+2025-11-19 23:42:59 | ERROR    | Summary file 'app/data/memory/default/summary.json' does not exist.
+2025-11-19 23:42:59 | INFO     | Summary memory: 0 items found.
+2025-11-19 23:44:47 | INFO     | APP Start...
+2025-11-19 23:45:04 | ERROR    | Summary file 'app/data/memory/default/summary.json' does not exist.
+2025-11-19 23:45:04 | ERROR    | Summary file 'app/data/memory/default/summary.json' does not exist.
+2025-11-19 23:45:04 | INFO     | Summary memory: 0 items found.
+2025-11-19 23:45:14 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 23:45:14 | WARNING  | Vector index file 'app/data/vector_store/memory/default/memory.index' does not exist.
+2025-11-19 23:45:14 | INFO     | Relevant memory: 0 items found.
+2025-11-19 23:45:19 | WARNING  | Memory file 'app/data/memory/default/memory.json' does not exist.
+2025-11-19 23:45:19 | INFO     | Recent memory: 0 items found.
+2025-11-19 23:46:02 | INFO     | model: gpt-5-mini, length messages: 2, tools: 8
+2025-11-19 23:46:03 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 23:46:03 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 23:46:03 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 23:46:05 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 23:46:08 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 23:46:08 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 23:46:52 | INFO     | Summary memory: 0 items found.
+2025-11-19 23:47:03 | INFO     | Relevant memory: 0 items found.
+2025-11-19 23:47:09 | INFO     | Recent memory: 113 items found.
+2025-11-19 23:47:26 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 23:47:26 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 23:47:31 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 23:47:32 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'
+2025-11-19 23:48:53 | INFO     | Summary memory: 0 items found.
+2025-11-19 23:49:02 | INFO     | Relevant memory: 0 items found.
+2025-11-19 23:49:09 | INFO     | Recent memory: 298 items found.
+2025-11-19 23:49:25 | INFO     | model: gpt-5-mini, length messages: 3, tools: 8
+2025-11-19 23:49:25 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\memory.json'
+2025-11-19 23:49:26 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\memory.index.meta.json'
+2025-11-19 23:49:31 | INFO     | model: gpt-4o-mini, length messages: 2, tools: 0
+2025-11-19 23:49:31 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\summary.json'
+2025-11-19 23:49:32 | DEBUG    | Atomic JSON write successful for 'app\data\vector_store\memory\default\summary.index.meta.json'
+2025-11-19 23:49:32 | DEBUG    | Atomic JSON write successful for 'app\data\memory\default\count_summary.json'

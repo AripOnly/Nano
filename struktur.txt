@@ -1,0 +1,44 @@
+|-> app/
+|   |-> core/
+|   |   |-> orchestrator.py
+   |-> agent/
+|   |   |-> agent.py
+|   |-> services/
+|   |   |-> model_openai.py
+|   |   |-> web_manager.py
+|   |-> memory/
+|   |   |-> base_memory.py
+|   |   |-> base_summarizer.py
+|   |   |-> recent_history.py
+|   |   |-> relevant_history.py
+|   |   |-> memory_summary.py
+|   |-> rag/
+|   |   |-> vector_store.py
+|   |   |-> embedder.py
+|   |-> tools/
+|   |   |-> tool_calling.py
+|   |-> utils/
+|   |   |-> id_utils.py
+|   |   |-> cleaner.py
+|   |   |-> logger.py
+|   |   |-> time_utils.py
+|   |   |-> init.py
+|   |-> data/
+|   |   |-> memory/
+|   |   |   |-> memory.json
+|   |   |   |-> summary.json
+|   |   |   |-> counter_summary.json
+|   |   |-> vector_store/
+|   |   |   |   |-> memory/
+|   |   |   |   |   |-> default/
+|   |   |   |   |   |   |-> memory.index
+|   |   |   |   |   |   |-> memory.index.meta.json
+|   |   |   |   |   |   |-> summary.index
+|   |   |   |   |   |   |-> summary.index.meta.json
+|   |   |-> tools_schema/
+|   |   |   |-> tools.json
+|   |   |   |-> tools.index
+|   |   |   |-> tools.index.meta.json
+|-> cli.py
+|-> requirements.py
+|-> .env
