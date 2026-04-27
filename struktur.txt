@@ -24,11 +24,19 @@
 |   |-> tools/
 |   |   |-> tool_calling.py
 |   |-> utils/
-|   |   |-> id_utils.py
+|   |   |-> file_manager/
+|   |   |	|-> base_file_manager.py
+|   |   |	|-> directory_manager.py
+|   |   |	|-> file_json_manager.py
+|   |   |	|-> file_oprations_manager.py
+|   |   |	|-> file_text_manager.py
+|   |   |	|-> files_manager.py
+|   |   |-> id_generator.py
 |   |   |-> cleaner.py
 |   |   |-> logger.py
 |   |   |-> time_utils.py
 |   |   |-> init.py
+|   |   |-> token_count.py
 |   |-> data/
 |   |   |-> memory/
 	|   |   |-> default/
