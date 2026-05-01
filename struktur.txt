@@ -49,6 +49,5 @@
 |   |   |   |-> tools.index
 |   |   |   |-> tools.index.meta.json
 |-> cli.py
-|-> main.py
 |-> requirements.py
 |-> .env
