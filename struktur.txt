@@ -1,10 +1,4 @@
 |-> app/
-|   |-> ui/
-|   |   |-> templates/
-|   |   |   |-> index.html
-|   |   |-> static/
-|   |   |   |-> style.css
-|   |   |   |-> script.js
 |   |-> core/
 |   |   |-> orchestrator.py
 |   |-> agent/
