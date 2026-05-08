@@ -15,5 +15,5 @@ while True:
         log.info("APP Shutdown...")
         break
 
-    response = engine.process(user_input)
+    response = engine.process_message(user_input)
     print(f"\nNano: {response}\n")

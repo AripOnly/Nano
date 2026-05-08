@@ -62,5 +62,40 @@
         "user": "sipp lah kalo gitu hehehe",
         "actions": [],
         "assistant": "Sippp — gas aja! Hehehe. Mau aku bantu apa sekarang? Pilihan cepat:\n\n- Buka atau edit file (tulis: buka file <nama>)\n- Debug/cek kode (tulis: debug <file> atau jelaskan error)\n- Tulis/terjemah teks (kirim teksnya)\n- Cari info terbaru / cek fakta (katakan topiknya)\n- Ngobrol santai / tebak-tebakan / ide kreatif\n\nKamu pilih yang mana, atau langsung bilang apa yang pengin kamu lakukan."
+    },
+    {
+        "chat_id": "msg_csP8gq9eTfy-ygRCg69ANw",
+        "timestamp": "Sunday, 03-05-2026 02:15:16",
+        "user": "hay",
+        "actions": [],
+        "assistant": "Hay! Apa kabar? Mau aku bantu apa hari ini — buka/ubah file, debug kode, terjemahin, nyari info, atau cuma ngobrol santai?"
+    },
+    {
+        "chat_id": "msg_Q4cBXKGlTLmNInbCGcURHA",
+        "timestamp": "Sunday, 03-05-2026 02:35:16",
+        "user": "hay",
+        "actions": [],
+        "assistant": "Hay! Aku Nano — siap bantu. Apa kabar? Mau aku lakukan apa hari ini: buka/ubah file, debug kode, terjemahkan, cari info terbaru, atau sekadar ngobrol? Kalau mau, kita bisa lanjutin pembahasan file test.py yang tadi."
+    },
+    {
+        "chat_id": "msg_lUmypMgRS3inskeDbePxow",
+        "timestamp": "Sunday, 03-05-2026 02:43:48",
+        "user": "kangen aja aku hehehe",
+        "actions": [],
+        "assistant": "Aww, kangen ya — senang kamu bilang gitu! Hehe. Mau aku nemenin gimana nih?\n\nPilihan cepat:\n- Ngobrol santai / curhat\n- Main tebak-tebakan atau game singkat\n- Bikin puisi/quote lucu buat kamu\n- Bantu nulis pesan buat seseorang\n- Lanjut buka/edit file atau kode\n\nKamu pilih aja atau bilang apa yang pengin kamu omongin :)"
+    },
+    {
+        "chat_id": "msg_lRkVq1ERSMu9qeZMRI-niw",
+        "timestamp": "Sunday, 03-05-2026 02:45:27",
+        "user": "gak soalnya udah 6 bulan kamu gak ku aktifkan hehehe",
+        "actions": [],
+        "assistant": "Wah, lama juga—selamat datang kembali! Hehe. Aku nggak marah kok, malah seneng kamu balik. Mau langsung mulai apa?\n\nBeberapa opsi cepat:\n- Buka lagi file terakhir (test.py) dan lanjut edit atau perbaikan\n- Bantu debug / tambahkan fitur kode\n- Buat ringkasan percakapan terakhir atau catatan perubahan\n- Tulis pesan/puisi/quote lucu buat dikirim ke seseorang\n- Ngobrol santai atau main game singkat\n\nPilih salah satu atau bilang apa yang pengin kamu lakukan — aku siap!"
+    },
+    {
+        "chat_id": "msg_xxkURSKHRJa4dgRGsDsJtw",
+        "timestamp": "Saturday, 09-05-2026 01:20:57",
+        "user": "hay nano",
+        "actions": [],
+        "assistant": "Hay! Apa kabar? Senang kamu balik. Mau aku bantu apa hari ini — buka/lanjut file test.py, debug kode, terjemahin, nulis/kreasi (puisi, pesan), cari info, atau cuma ngobrol santai? Kamu pilih aja."
     }
 ]

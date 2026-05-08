@@ -1,0 +1,22 @@
+graph TD
+    User([User Input]) --> Orchestrator{Multi-Agent Orchestrator}
+    
+    subgraph "Planning Phase"
+        Orchestrator --> Plan[Breakdown Task into Sub-tasks]
+    end
+    
+    subgraph "Execution Phase (Autonomous Loop)"
+        Plan --> Agent1[Researcher Agent]
+        Agent1 --> Memory[(Shared Memory / RAG)]
+        Memory --> Agent2[Writer/Coder Agent]
+        Agent2 --> Tool[Tool Execution]
+        Tool --> Agent2
+    end
+    
+    subgraph "Verification Phase"
+        Agent2 --> Critic[Critic/Evaluator Agent]
+        Critic -- "Not Good" --> Plan
+        Critic -- "Success" --> Final[Final Response]
+    end
+    
+    Final --> User

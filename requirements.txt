@@ -1,0 +1,8 @@
+openai
+google-genai
+sentence-transformers
+
+tiktoken
+faiss-cpu
+python-dotenv
+loguru

@@ -54,6 +54,8 @@ class Agent:
                 if getattr(item, "type", None) == "function_call"
             ]
 
+            prompt = ""
+
             if not function_calls:
                 self.memory.save_memory(message_input)
                 count = self.summary.get_counter()

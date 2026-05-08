@@ -1,0 +1,18 @@
+|-> app/                    # Source code utama
+|   |-> core/               # Logika inti (Orchestrator, Personality)
+|   |-> agent/              # Logika spesifik Agent & Prompting
+|   |-> services/           # Provider eksternal (OpenAI, Anthropic, dll)
+|   |-> memory/             # Logika pengelolaan memori
+|   |-> rag/                # RAG: Indexing & Retrieval
+|   |-> tools/              # Custom tools/plugins
+|   |-> ui/                 # Jika ada Web UI (Templates & Static)
+|   |-> config/             # Pengaturan aplikasi (Pydantic settings)
+|   |-> utils/              # Helper functions
+|-> data/                   # Data persisten (di luar source code)
+|   |-> memory/
+|   |-> vector_store/
+|-> tests/                  # Unit testing & Integration testing
+|-> .env                    # Environment variables
+|-> cli.py                  # Entry point CLI
+|-> main.py                 # Entry point Web (jika menggunakan FastAPI/Flask)
+|-> requirements.txt        # Daftar dependensi

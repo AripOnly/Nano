@@ -48,7 +48,7 @@ class ModelOpenAI:
 
         log.info("Konfigurasi model diperbarui.")
 
-    def call(self, messages: list[dict], tools: list[dict] = None):
+    def call(self, messages: list[dict], tools: list[dict] = []):
         """
         Panggil model sesuai konfigurasi yang aktif.
         """
